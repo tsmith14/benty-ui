@@ -1,4 +1,4 @@
-## One Dark UI theme [![Build Status](https://travis-ci.org/atom/one-dark-ui.svg?branch=master)](https://travis-ci.org/atom/one-dark-ui)
+## Benty UI theme [![Build Status](https://travis-ci.org/atom/one-dark-ui.svg?branch=master)](https://travis-ci.org/atom/one-dark-ui)
 
 A dark UI theme that adjusts to most syntax themes.
 
@@ -18,8 +18,12 @@ There is a matching [syntax theme](https://atom.io/themes/one-dark-syntax), but 
 
 ### Install
 
-This theme is installed by default with Atom and can be activated by going to the __Settings > Themes__ section and selecting "One Dark" from the __UI Themes__ drop-down menu.
+To install this them:
 
+1. `git clone` to get the repo
+2. `cd` into the repo
+3. Run `apm link` to link the theme into ~/.atom/packages
+4. Select the theme in Atom under Settings/Themes
 ### Settings
 
 ![Theme settings](https://cloud.githubusercontent.com/assets/378023/15923548/cb3dc7ce-2e68-11e6-8a51-10801fb483bf.png)
