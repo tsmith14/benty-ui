@@ -1,4 +1,4 @@
-describe "One Dark UI theme", ->
+describe "Benty UI theme", ->
   beforeEach ->
     waitsForPromise ->
       atom.packages.activatePackage('benty-ui')

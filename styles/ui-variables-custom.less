@@ -3,6 +3,7 @@
 // ----------------------------------------------
 
 @import "syntax-variables";
+
 .ui-syntax-color() { @syntax-background-color: hsl(220,24%,20%); } .ui-syntax-color(); // fallback color
 @ui-syntax-color: @syntax-background-color;
 
@@ -60,6 +61,9 @@
 @level-1-color: lighten(@base-background-color, 6%);
 @level-2-color: @base-background-color;
 @level-3-color: darken(@base-background-color, 3%);
+
+@level-3-color-hover:  lighten(@level-3-color, 6%);
+@level-3-color-active: lighten(@level-3-color, 3%);
 
 
 // Accent (Custom) -----------------
@@ -120,7 +124,7 @@
 @ui-padding-pane:         @ui-size*.5;
 @ui-padding-icon:         @ui-padding/3.3;
 @ui-line-height:          @ui-size*2;
-@ui-tab-height:           @ui-padding*2;
+@ui-tab-height:           @ui-size*3;
 
 
 
