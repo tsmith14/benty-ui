@@ -25,6 +25,7 @@
     vertical-align: top;
 
     &:hover {
+      text-decoration: none;
       background-color: @level-3-color-hover;
     }
     &:active {
@@ -49,7 +50,8 @@
   .icon::before {
     font-size: 1.33333em; // should be 16px with a default of 12px
   	width: auto; // use natural width
-    height: auto;
+    line-height: 1;
+    height: 1em; // same as line-height
     margin-right: .25em;
     top: auto;
   }
@@ -63,7 +65,6 @@
   // Read-only -> Remove hover effect
   .is-read-only, // <- use this class in packages
   status-bar-launch-mode,
-  status-bar-cursor,
   busy-signal {
     &:hover,
     &:active,
@@ -81,5 +82,16 @@
       text-decoration: none;
       cursor: default;
     }
+  }
+
+  // Remove margin for icon without text
+  status-bar-launch-mode::before, // Launch mode
+  .about-release-notes::before, // New release squirrel
+  .PortalStatusBarIndicator .icon::before, // Teletype
+  .icon.is-icon-only::before {
+    margin-right: 0;
+  }
+  .github-PushPull-label.is-push:empty { // GitHub package when nothing to push
+    margin-right: -.25em;
   }
 }
